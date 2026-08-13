@@ -1,116 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/STYLE/style.css">
-    <link rel="stylesheet" href="/STYLE/normalize.css">
-    <link rel="icon" type="image" href="/favicon.ico"
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/STYLE/style.css" />
+    <link rel="stylesheet" href="/STYLE/normalize.css" />
+    <link rel="icon" type="image" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--titulo página-->
+    <!--titulo página-->
     <title>Triple Espresso</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <!--logo-->
+      <!--logo-->
 
-        <img class="logo" src="/IMAGENES/logo_coffeeshop_dark.svg" alt="logo de triple espresso">
+      <img
+        class="logo"
+        src="/IMAGENES/logo_coffeeshop_dark.svg"
+        alt="logo de triple espresso"
+      />
 
-        <!--menú-->
-        <nav class="nav">
+      <!--menú-->
+      <nav class="nav">
         <ul class="nav-links">
-            <li class="nav__item"><a href="#reservation" class="nav__link">Reservar una mesa</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Contactos</a></li>
+          <li class="nav__item">
+            <a href="#reservation" class="nav__link">Reservar una mesa</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contactos</a>
+          </li>
         </ul>
-          </nav>
+      </nav>
 
-          <!--titulo-->
-          <h1 class="header-title">
-            <span class="span-accent">Café de especialidad</span><br>
-            en Triple Peaks
-          </h1>
+      <!--titulo-->
+      <h1 class="header-title">
+        <span class="span-accent">Café de especialidad</span><br />
+        en Triple Peaks
+      </h1>
 
-          <!--descripcion-->
+      <!--descripcion-->
 
-            <p class="header-description">¡Te damos la bienvenida a nuestra zona de estudio!
-                Aquí tenemos café para darte energía y motivar tu creatividad.</p>
+      <p class="header-description">
+        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+        para darte energía y motivar tu creatividad.
+      </p>
 
-          <!--imagen-->
+      <!--imagen-->
 
-            <img class="header-image" src="/IMAGENES/inside_coffee_shop.png" alt="inside_coffee_shop">
+      <img
+        class="header-image"
+        src="/IMAGENES/inside_coffee_shop.png"
+        alt="inside_coffee_shop"
+      />
 
-        <div class="header-info">
+      <div class="header-info">
         <div class="header-hours">
-                <p class="info-text">Horario:</p>
-                <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
-                <p class="info-text">Sábado y Domingo (de 11:00h a 18:00h)</p>
+          <p class="info-text">Horario:</p>
+          <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
+          <p class="info-text">Sábado y Domingo (de 11:00h a 18:00h)</p>
         </div>
-            <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
-        </div>
+        <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+      </div>
     </header>
     <main class="content">
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
 
-        <section class="reservation" id="reservation">
-
-            <h2 class="reservation__title">Reservar una mesa</h2>
-
-            <form class="form">
-            <fieldset class="form__fieldset">
-
+        <form class="form">
+          <fieldset class="form__fieldset">
             <label class="form__reservation" for="name">Nombre *</label>
-            <input class="form__input" type="text" id="name" placeholder="Nombre" required>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              placeholder="Nombre"
+              required
+            />
 
-            <label class="form__reservation" for="number">Número de comensales *</label>
-            <input class="form__input" type="number" id="number" placeholder="1-8" min="1" max="8" required>
+            <label class="form__reservation" for="number"
+              >Número de comensales *</label
+            >
+            <input
+              class="form__input"
+              type="number"
+              id="number"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
 
             <label class="form__reservation" for="date">Fecha y hora *</label>
-            <input class="form__input" type="datetime-local" id="date" required>
+            <input
+              class="form__input"
+              type="datetime-local"
+              id="date"
+              required
+            />
 
-            <label class="form__reservation" for="mail">Tu correo electrónico *</label>
-            <input class="form__input" type="email" id="mail" placeholder="email@email.com" required>
+            <label class="form__reservation" for="mail"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              id="mail"
+              placeholder="email@email.com"
+              required
+            />
 
-            <button class="reservation__button" type="submit">Reservar una mesa</button>
+            <button class="reservation__button" type="submit">
+              Reservar una mesa
+            </button>
 
-            <label class="form__checkbox-label"><input class="reservation__checkbox" type="checkbox"><span>Acepto los términos de uso</span></label>
-
-            </fieldset>
-            </form>
-        </section>
+            <label class="form__checkbox-label"
+              ><input class="reservation__checkbox" type="checkbox" /><span
+                >Acepto los términos de uso</span
+              ></label
+            >
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="footer" id="contacts">
       <div class="footer__circle"></div>
 
-  <div class="footer__content">
-    <img src="./IMAGENES/images_sprint3/images_sprint3_stage2/logo_coffeeshop_light.svg" alt="Logotipo Triple Espresso" class="footer__logo" />
+      <div class="footer__content">
+        <img
+          src="./IMAGENES/images_sprint3/images_sprint3_stage2/logo_coffeeshop_light.svg"
+          alt="Logotipo Triple Espresso"
+          class="footer__logo"
+        />
 
-    <div class="footer__social">
-      <h3 class="footer__social-heading">Redes sociales</h3>
-      <ul class="footer__list">
-        <li class="footer__list-item">
-          <a href="#" class="footer__link">
-            <img src="/IMAGENES/facebook_white.svg" alt="Facebook" class="footer__social-icon" />
-            Facebook
-          </a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__link">
-            <img src="/IMAGENES/instagram_white.svg" alt="Instagram" class="footer__social-icon" />
-            Instagram
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+        <div class="footer__social">
+          <h3 class="footer__social-heading">Redes sociales</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                <img
+                  src="/IMAGENES/facebook_white.svg"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                <img
+                  src="/IMAGENES/instagram_white.svg"
+                  alt="Instagram"
+                  class="footer__social-icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <p class="footer__copyright">© 2026 Erick Calderón Macías</p>
-
+      <p class="footer__copyright">© 2026 Erick Calderón Macías</p>
     </footer>
-</body>
+  </body>
 </html>
