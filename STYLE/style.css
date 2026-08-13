@@ -12,9 +12,12 @@ body {
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
+  margin: 0;
   background-image: url(/IMAGENES/background_header.svg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding-top: 30px;
 }
 
 .logo {
@@ -47,9 +50,14 @@ body {
   line-height: 20px;
 }
 
-.nav-link {
+.nav__link {
   text-decoration: none;
   color: black;
+}
+
+.nav__link:hover {
+  color: #ff976b;
+  transition: color 0.3s ease;
 }
 
 .header-title {
@@ -221,6 +229,11 @@ body {
   flex-shrink: 0;
 }
 
+.reservation__button:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
 .footer {
   background-color: #d35722;
   position: relative;
@@ -300,4 +313,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+}
+
+.footer__link:hover {
+  color: #ffd6c5;
+  transition: color 0.3s ease;
 }
